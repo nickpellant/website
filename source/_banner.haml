@@ -6,8 +6,17 @@
           **Nick Pellant** is a software architect based in Manchester, UK. He's also a writer, speaker and aspiring academic who is dizzied by the profound majesty of the cosmos.
 
       %ul
-        %li= link_to 'Blog', '/'
-        %li= link_to 'About', '/about.html'
-        %li= link_to 'Skills', '/skills.html'
-        %li= link_to 'Work', '/work.html'
+        %li
+          = link_to 'Blog', '/'
+          %p Tech, code & ramblings
+        %li
+          = link_to 'About', '/about.html'
+          %p Biography & colophon
+        %li
+          = link_to 'Skills', '/skills.html'
+          %p What I can do
+        %li
+          = link_to 'Work', '/work.html'
+          %p Creations past & present
+
         %li.header-email-button= link_to 'Email', '#', class: 'button'

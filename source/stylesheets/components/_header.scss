@@ -22,11 +22,16 @@
     margin: 0 0.6em 0 0;
   }
 
+  .header-nav li p {
+    display: none;
+  }
+
   .header-nav li:last-child a {
     margin: 0;
   }
 
   .header-email-button {
+    display: block;
     float: right;
   }
 
@@ -50,6 +55,33 @@ header[role="banner"] {
     min-height: 100%;
     position: fixed;
   
+    .header-nav li, .header-email-button {
+      list-style: none;
+      display: block;
+      float: none;
+      margin-bottom: 0.25em;
+    }
+
+    .header-nav li p {
+      display: block;
+      color: lighten($primary_color, 20%);
+      font-style: italic;
+    }
+
+    .header-email-button {
+      margin-top: 1em;
+    }
+
+    .header-nav {
+      li:before {
+        content: "\2192 \0020";
+      }
+
+      .header-email-button:before {
+        content: '';
+      }
+    }
+
     .header-inner {
       position: relative;
       display: block;
