@@ -1,0 +1,1 @@
+jQuery(".article-header h1").fitText();

@@ -12,7 +12,6 @@
     %meta{:content => "Nick Pellant is a software architect based in Manchester, UK. He’s also a writer, speaker and aspiring academic who is dizzied by the profound majesty of the cosmos.", :name => "description"}
     %meta{:content => "width=device-width", :name => "viewport"}
     = stylesheet_link_tag "screen", media: "all"   
-    = javascript_include_tag "core"
     %script{:src => "//use.typekit.net/yuk5ice.js", :type => "text/javascript"}
     :javascript
       try{Typekit.load();}catch(e){}
@@ -25,3 +24,8 @@
 
     %div{ role: 'main' }
       = yield
+
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')
+    = javascript_include_tag 'plugins', 'core'

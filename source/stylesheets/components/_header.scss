@@ -40,6 +40,6 @@
 
 }
 
-header {
+header[role="banner"] {
   @include header($primary_color, $light_text_color);
 }

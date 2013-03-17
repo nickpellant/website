@@ -1,0 +1,31 @@
+.article-header {
+  position: relative;
+
+  h1 {
+    @include wrapper;
+
+    color: $light_text_color;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  figcaption {
+    @include small;
+
+    background-color: darken($primary_color, 50%);
+    bottom: 0;
+    color: $light_text_color;
+    position: absolute;
+    padding: 0.5em;
+    right: 0;
+    opacity: 0.8;
+    z-index: 1;
+
+    a {
+      @include link($light_text_color);
+    }
+  }
+}
