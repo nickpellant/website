@@ -2,11 +2,14 @@
 @import 'base/variables';
 @import 'base/normalize';
 @import 'base/ggs';
-@import 'base/global';
-@import 'base/wrapper';
-@import 'base/typography';
 
 @import 'components/button';
 @import 'components/link';
+@import 'base/wrapper';
+
+@import 'base/global';
+@import 'base/typography';
+
 @import 'components/header';
+@import 'components/article';
 @import 'components/article_header';

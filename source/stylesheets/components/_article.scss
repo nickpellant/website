@@ -1,0 +1,30 @@
+article {
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    @include wrapper;
+    color: $light_text_color;
+    background-color: $comp_base_color;
+    font-style: italic;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }    
+
+  section {
+    @include wrapper;
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  section h2:first-child {
+    margin-top: 0;
+  }
+
+}

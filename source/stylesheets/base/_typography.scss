@@ -1,5 +1,9 @@
 h1 {
   text-transform: uppercase;
-  font-family: "brandon-grotesque", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
+}
+
+h2 {
+  border-bottom: 1px dotted darken($light_text_color, 10%);
 }

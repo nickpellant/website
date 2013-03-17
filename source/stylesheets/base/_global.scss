@@ -1,7 +1,15 @@
+@mixin text_shadow {
+  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
 body, html {
   font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
 
-@mixin text_shadow {
-  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+a {
+  @include link($primary_color);
+}
+
+p {
+  margin-bottom: 1em;
 }

@@ -1,6 +1,7 @@
 $base_color: rgba(98, 195, 232, 1);
 $comp_base_color: adjust-hue($base_color, 180);
 $primary_color: desaturate($base_color, 40%);
+$comp_primary_color: adjust-hue(desaturate($base_color, 40%), 180);
 $text_color: darken(grayscale($primary_color), 30%);
 $light_text_color: lighten($primary_color, 25%);
 $comp_text_color: darken(grayscale($comp_base_color), 30%);

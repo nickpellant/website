@@ -11,7 +11,7 @@
 // Important numbers
 //
 
-$line: 24;
+$line: 22;
 $column: 100% / 18;
 $font-size: 16;
 $em: $font-size * 1;
@@ -115,17 +115,14 @@ h2, h1 {
 *
 */
 
-h1, h2 {
-  margin: (24/26*1em) 0 (36/26*1em);
+h1, h2, h3 {
+  margin: #{18/$em}em 0 #{18/$em}em;
 }
 
 h2 {
   font-weight: normal;
 }
 
-h3 {
-  margin: #{24/$em}em 0 #{24/$em}em;
-}
 
 /*
 *

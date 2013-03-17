@@ -2,7 +2,7 @@
   $link_border_color: darken($link_text_color, 15%);
 
   color: $link_text_color;
-  margin: 5px 10px;
+  margin: 0.125em 0.125em;
   @include text_shadow;
   position: relative;
 
