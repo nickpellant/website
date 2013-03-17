@@ -1,10 +1,9 @@
 @mixin link ($link_text_color) {
   $link_border_color: darken($link_text_color, 15%);
-  $link_text_shadow_color: rgba(0,0,0,0.2);
 
   color: $link_text_color;
   margin: 5px 10px;
-  text-shadow: 0 1px 0 $link_text_shadow_color;
+  @include text_shadow;
   position: relative;
 
   &:link {

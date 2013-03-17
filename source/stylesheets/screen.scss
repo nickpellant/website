@@ -1,7 +1,10 @@
+@import 'bourbon';
 @import 'base/variables';
 @import 'base/normalize';
 @import 'base/ggs';
+@import 'base/global';
 @import 'base/wrapper';
 
+@import 'components/button';
 @import 'components/link';
 @import 'components/header';

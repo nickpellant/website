@@ -1,9 +1,9 @@
 @mixin header($header_primary_color, $header_text_color) {
   @include wrapper;
+  @include text_shadow;
 
   background-color: $header_primary_color;
   color: $header_text_color;
-  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
 
   strong {
     color: lighten($header_text_color, 10%);
@@ -26,11 +26,20 @@
     margin: 0;
   }
 
+  .header-email-button {
+    float: right;
+  }
+
+  .header-nav li a.button {
+    @include button($comp_base_color);
+  }
+
   .header-intro {
     margin-bottom: 1em;
   }
+
 }
 
 header {
-  @include header($primary_color, $comp_text_color);
+  @include header($primary_color, $light_text_color);
 }
