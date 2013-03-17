@@ -1,12 +1,13 @@
 %header{ role: 'banner' }
-  %nav.header-nav
-    .header-intro
-      :markdown
-        **Nick Pellant** is a software architect based in Manchester, UK. He's also a writer, speaker and aspiring academic who is dizzied by the profound majesty of the cosmos.
+  .header-inner
+    %nav.header-nav
+      .header-intro
+        :markdown
+          **Nick Pellant** is a software architect based in Manchester, UK. He's also a writer, speaker and aspiring academic who is dizzied by the profound majesty of the cosmos.
 
-    %ul
-      %li= link_to 'Blog', '/'
-      %li= link_to 'About', '/about.html'
-      %li= link_to 'Skills', '/skills.html'
-      %li= link_to 'Work', '/work.html'
-      %li.header-email-button= link_to 'Email', '#', class: 'button'
+      %ul
+        %li= link_to 'Blog', '/'
+        %li= link_to 'About', '/about.html'
+        %li= link_to 'Skills', '/skills.html'
+        %li= link_to 'Work', '/work.html'
+        %li.header-email-button= link_to 'Email', '#', class: 'button'

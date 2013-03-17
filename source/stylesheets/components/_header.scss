@@ -37,9 +37,23 @@
   .header-intro {
     margin-bottom: 1em;
   }
-
 }
 
 header[role="banner"] {
   @include header($primary_color, $light_text_color);
+}
+
+@media screen and (min-width: 55.5em) {
+  header[role="banner"] {
+    float: left;
+    width: 4 * $column;
+    min-height: 100%;
+    position: fixed;
+  
+    .header-inner {
+      position: relative;
+      display: block;
+      margin-top: 50%;
+    }
+  }
 }
