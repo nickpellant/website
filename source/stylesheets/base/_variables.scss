@@ -1,0 +1,3 @@
+$primary_color: rgba(134, 179, 196, 1);
+$text_color: darken(grayscale($primary_color), 30%);
+$comp_text_color: lighten($primary_color, 25%);

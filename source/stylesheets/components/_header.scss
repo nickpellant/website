@@ -1,0 +1,36 @@
+@mixin header($header_primary_color, $header_text_color) {
+  @include wrapper;
+
+  background-color: $header_primary_color;
+  color: $header_text_color;
+  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+
+  strong {
+    color: lighten($header_text_color, 10%);
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .header-nav li {
+    display: inline-block;
+  }
+
+  .header-nav li a {
+    @include link(lighten($header_text_color, 5%));
+    margin: 0 0.6em 0 0;
+  }
+
+  .header-nav li:last-child a {
+    margin: 0;
+  }
+
+  .header-intro {
+    margin-bottom: 1em;
+  }
+}
+
+header {
+  @include header($primary_color, $comp_text_color);
+}

@@ -1,0 +1,26 @@
+@mixin link ($link_text_color) {
+  $link_border_color: darken($link_text_color, 15%);
+  $link_text_shadow_color: rgba(0,0,0,0.2);
+
+  color: $link_text_color;
+  margin: 5px 10px;
+  text-shadow: 0 1px 0 $link_text_shadow_color;
+  position: relative;
+
+  &:link {
+    text-decoration: none;
+    border-bottom: 1px dotted $link_border_color;
+  }
+  &:hover {
+    color: saturate(lighten($link_text_color, 10%), 10%);
+    border-color: darken($link_border_color, 5%);
+    text-decoration: none;
+    border-bottom: 1px solid $link_border_color;
+  }
+  &:focus, &:active {
+    color: saturate(darken($link_text_color, 10%), 10%);
+    border-color: lighten($link_border_color, 10%);
+    top: 2px;
+    text-decoration: none;
+  }
+}
