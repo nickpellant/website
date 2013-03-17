@@ -3,6 +3,10 @@ article {
     width: 100%;
   }
 
+  a.button {
+    @include button($primary_color, $light_text_color);
+  }
+
   figcaption {
     @include wrapper;
     color: $light_text_color;
@@ -18,13 +22,27 @@ article {
   section {
     @include wrapper;
 
-    p:last-of-type {
+    *:last-child {
       margin-bottom: 0;
     }
   }
 
   section h2:first-child {
     margin-top: 0;
+  }
+
+  ul {
+    margin-top: 1em;
+
+    li {
+      margin-left: 2em;
+      list-style: none;
+      margin-top: 0.5em;
+    }
+    li:before {
+      color: $primary_color;
+      content: "\2192 \0020";
+    }
   }
 
 }

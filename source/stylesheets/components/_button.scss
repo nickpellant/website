@@ -1,5 +1,5 @@
-@mixin button ($button_primary_color) {
-  color: $light_comp_text_color;
+@mixin button ($button_primary_color, $button_text_color) {
+  color: $button_text_color;
   border: 1px solid darken($button_primary_color, 30%);
   border-radius: 6px;
   background-clip: padding-box;
@@ -12,14 +12,14 @@
   &:hover {
     border-color: darken($button_primary_color, 40%);
     box-shadow: inset 0 1px 0 lighten($button_primary_color, 15%);
-    color: saturate(lighten($light_comp_text_color, 10%), 10%);
+    color: saturate(lighten($button_text_color, 10%), 10%);
     @include background-image(linear-gradient(bottom, darken($button_primary_color, 10%) 0%, lighten($button_primary_color, 5%) 100%));
   }
 
   &:focus, &:active {
     border-color: darken($button_primary_color, 50%);
     box-shadow: inset 0 1px 0 lighten($button_primary_color, 5%);
-    color: saturate($light_comp_text_color, 10%);
+    color: saturate($button_text_color, 10%);
     @include background-image(linear-gradient(bottom, darken($button_primary_color, 20%) 0%, darken($button_primary_color, 5%) 100%));    
   }
 }

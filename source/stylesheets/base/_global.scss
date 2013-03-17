@@ -1,8 +1,5 @@
-@mixin text_shadow {
-  text-shadow: 0 1px 0px rgba(0,0,0,0.2);
-}
-
 body, html {
+  color: $text_color;
   font-family: "museo-slab", Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
   height: 100%;
 }

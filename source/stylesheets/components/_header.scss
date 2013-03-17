@@ -31,12 +31,12 @@
   }
 
   .header-email-button {
-    display: block;
+    display: block !important;
     float: right;
   }
 
   .header-nav li a.button {
-    @include button($comp_base_color);
+    @include button($comp_base_color, $light_comp_text_color);
   }
 
   .header-intro {
