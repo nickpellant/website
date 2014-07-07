@@ -34,6 +34,14 @@
     @include button($comp_base_color, $light_comp_text_color);
   }
 
+  .header-nav li a.github-button {
+    @include button($github_base_color, $light_github_text_color);
+  }
+
+  .header-nav li a.linkedin-button {
+    @include button($linkedin_base_color, $light_linkedin_text_color);
+  }
+
   .header-email-button {
     display: block !important;
     float: right;

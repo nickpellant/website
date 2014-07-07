@@ -6,3 +6,9 @@ $text_color: darken(grayscale($primary_color), 30%);
 $light_text_color: lighten($primary_color, 25%);
 $comp_text_color: darken(grayscale($comp_base_color), 30%);
 $light_comp_text_color: lighten($comp_base_color, 25%);
+
+$github_base_color: rgba(68, 68, 68, 1);
+$light_github_text_color: lighten(grayscale($github_base_color), 60%);
+
+$linkedin_base_color: rgba(0, 123, 182, 1);
+$light_linkedin_text_color: lighten(grayscale($linkedin_base_color), 50%);
