@@ -20,6 +20,10 @@
         /   %p Creations past & present
 
         %li.header-email-button
-          = link_to 'Email', 'mailto:nick@nickpellant.com', class: 'button'
-          = link_to 'GitHub', 'https://github.com/nickpellant', class: 'github-button'
-          = link_to 'Linkedin', 'https://linkedin.com/in/nickpellant', class: 'linkedin-button'
+          = link_to 'mailto:nick@nickpellant.com', class: 'social-button', title: 'Email me'  do
+            %i.fa.fa-envelope
+          = link_to 'https://github.com/nickpellant', class: 'social-button', title: 'Review my work on GitHub' do
+            %i.fa.fa-github
+          = link_to 'https://linkedin.com/in/nickpellant', class: 'social-button', title: 'View my Linkedin profile' do
+            %i.fa.fa-linkedin
+
